@@ -1,66 +1,85 @@
-// let username = "Giorgi";
+// // // // // //loop while
 
-// console.log(typeof username);
+// // // // // // 1 შევქნათ ცვლადი და იყოს რიცვხი 0
 
-// let age = 30;
+// // // // // // 2 გადავცემთ შედარების ოპერატორს ან უბრალოდ True/Flase-ს hiles
+// // // // // // while(true)
 
-// console.log(typeof age);
+// // // // // let num = 0;
 
-// let isStudent = false;
+// // // // // while (num < 5) {
+// // // // //   num = num + 1;
+// // // // //   console.log(num);
+// // // // // }
 
-// console.log(typeof isStudent);
+// // // // let index = 0;
+// // // // let myfriendlist = ["ani", "giorgi", "luka", "rati"];
 
-// let testOne = null;
+// // // // while (index < myfriendlist.length) {
+// // // //   console.log(myfriendlist[index]);
+// // // //   index = index + 1;
 
-// console.log(typeof testOne);
+// // // // }
 
-// let job;
+// // // let myfriendlist = ["ani", "giorgi", "luka", "rati"];
 
-// console.log(typeof job);
+// // // for (let index = 0; myfriendlist.length > index; index++) {
+// // //   console.log(myfriendlist[index]);
+// // // }
 
-let UserProfile = {
-  id: 1234,
-  username: "dati",
-  isStudent: false,
-  email: "datiururu@gmail.com",
-  recemail: null,
-  laptop: "ASUS",
-  address: {
-    country: "georgia",
-    city: "tbilisi",
+// // let myfriendlist = ["ani", "giorgi", "luka", "rati"];
+
+// // myfriendlist.forEach(function (element, index) {
+// //   console.log(
+// //     `პიროვნება ჩემს სიაში სახელად ${element} არის ჩემს სიაში ${index}`
+// //   );
+// // });
+
+const homeworks = [
+  {
+    title: "Student Grades",
+    description:
+      "Display a list of students with their grades and highlight those with a grade of A.",
+    example: "John - A, Sarah - B, Mark - A",
   },
-};
-
-let UserProfile2 = {
-  id: 1235,
-  username: "giorgi",
-  isStudent: true,
-  email: "giorgiasd@gmail.com",
-  recemail: null,
-  laptop: "ROG",
-  address: {
-    country: "NY",
-    city: "tbilisi",
-    street: "aghmashenebeli",
-    homeid: 10,
+  {
+    title: "Task Manager",
+    description:
+      "Create a task list from an array of tasks and mark completed tasks with a different color.",
+    example: "Task 1: Complete, Task 2: Pending",
   },
-};
+  {
+    title: "Online Store",
+    description:
+      "Display a list of products with their names, prices, and availability status.",
+    example: "Product: Laptop, Price: $999, Status: In Stock",
+  },
+  {
+    title: "Weather Report",
+    description:
+      "Show a list of cities with their current temperatures and weather conditions.",
+    example: "City: New York, Temperature: 20°C, Condition: Sunny",
+  },
+  {
+    title: "Contact List",
+    description:
+      "Generate a contact list from an array of people with their phone numbers and emails.",
+    example: "John Doe - Phone: 123-456-7890, Email: john@example.com",
+  },
+];
 
-let username [
-    {  username: "giorgi",}
-{  isStudent: true,}
-{  email: "giorgiasd@gmail.com",}
+const homeworkcontainer = document.querySelector("#homeworkcontainer");
+console.log(homeworkcontainer);
 
-]
+for (let index = 0; index < homeworks.length; index++) {
+  const card = document.createElement("div");
+  card.innerHTML = `<></div>`;
+  card.classList.add("card2");
 
-console.log(UserProfile2.address.country);
+  homeworkcontainer.appendChild(card);
+}
+// const card = document.createElement("div");
+// card.textContent = "hello";
+// card.classList.add("card2");
 
-let keyword = "address";
-
-console.log(UserProfile2[address]);
-
-// ობიქეტი//key//value
-console.log(UserProfile.username);
-console.log(UserProfile.email);
-console.log(UserProfile.id);
-console.log(UserProfile.isStudent);
+// homeworkcontainer.appendChild(card);
